@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------My Code ------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat';
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 375px;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 10px;
+}
+
+.content{
+    background-color: white;
+    padding: 25px;
+}
+
+.image{
+    width: 375px;
+}
+
+.mobile-image{
+    display: block;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: 'Fraunces';
+    margin: 15px 0;
+}
+
+.text{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.forsale{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 2.5em;
+    margin-right: 20px;
+}
+
+.mainprice {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+  
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* ------- Desktop devise ----------- */
+
+@media (min-width: 1440px) {
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        margin-top: 20vh;
+    }
+    
+    .content{
+        width: 35%;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .image{
+        width: 35%;
+
+    }
+
+    .mobile-image{
+        display: none;
+    }
+    
+    .desktop-image {
+        display: block;
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+    
+    h1{
+        margin: 20px 0;
+    }    
+footer{    
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+  
+  }
+
+}
